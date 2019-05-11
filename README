@@ -1,0 +1,11 @@
+Una pantilla
+
+
+Dependencias
+
+	texlive-most
+	inkscape
+
+Compilación:
+
+1.	make
