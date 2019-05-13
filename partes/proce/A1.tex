@@ -2,8 +2,30 @@
 \label{sub:parte_a1}
 
 \begin{itemize}
-	\item Altura de caída libre:
-	\item Posición de la pelota en la penúltima foto:
-	\item Posición de la pelota en la última foto:
-	\item Tiempo que transcurre entre foto y foto:
+	\item Altura de caída libre: $1.5m$
+	\item Posición de la pelota en la penúltima foto: $16cm$
+	\item Posición de la pelota en la última foto: $8cm$
+	\item Tiempo que transcurre entre foto y foto: $ \frac{1}{60} s$
 \end{itemize}
+\hfill
+\begin{itemize}
+	\item Primer frame: $0001$
+	\item Último frame: $0033$
+\end{itemize}
+\hfill\\
+Aceleración teórica $A_t$:
+\begin{align*}
+	A_t &= -9.81 \frac{m}{s^2}
+\end{align*}
+Aceleración medida $A_m$:
+\begin{align*}
+	0.08m &= 1.5m + 0 \frac{m}{s} + \frac{1}{2}\bigg{(}A_m * \bigg{(}32* \frac{1}{60} s\bigg{)}^2\bigg{)} \\
+	A_m &= \frac{2(0.08m - 1.5m)}{( \frac{8}{15}s)^2} \\
+	A_m &= -9.98 \frac{m}{s^2}
+\end{align*}
+Error:
+\begin{align*}
+	\% error &= \frac{|A_m - A_t|}{A_t} * 100 \% \\
+	\% error &= \frac{|-9.98 \frac{m}{s^2}--9.81 \frac{m}{s^2}|}{-9.81 \frac{m}{s^2}} * 100 \% \\
+	\% error &= -1.73\%
+\end{align*}
