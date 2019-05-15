@@ -1,0 +1,5 @@
+d = 30cm (distancia del carrito)
+Radio interno = 14.5 mm
+Radio externo = 24 mm
+Masa colgante = 100g + 0.00502 kg
+Masa carrito = 1.0344 kg
