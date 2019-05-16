@@ -15,11 +15,19 @@
 				\begin{figure}[H]
 					\centering
 						\begin{tikzpicture}
-							\begin{axis}[title=Posición vs tiempo]
-								%\addplot[color=red,samples=100]{sin(deg(x))};
+							\begin{axis}[
+								title=Posición vs tiempo,
+								xlabel={tiempo ($s$)},
+								ylabel={Posición ($cm$)}
+								]
 								%Esto no funcionaba por los finales de línea de microsoft
-								\addplot[color=red]
-									table [x=Tiempo(s) ,y=Angulo(rad) ,col sep=comma]
+								\addplot[color=red, smooth]
+									table
+									[
+										x=Tiempo(s),
+										y expr=\thisrow{Angulo(rad)}*0.24,
+										col sep=comma
+									]
 									{datos3.csv};
 							\end{axis}
 						\end{tikzpicture}
@@ -28,11 +36,19 @@
 				\begin{figure}[H]
 					\centering
 						\begin{tikzpicture}
-							\begin{axis}[title=Velocidad vs tiempo]
-								%\addplot[color=red,samples=100]{sin(deg(x))};
+							\begin{axis}[
+								title=Velocidad vs tiempo,
+								xlabel={tiempo ($s$)},
+								ylabel={Velocidad ($ \frac{cm}{s} $)}
+								]
 								%Esto no funcionaba por los finales de línea de microsoft
-								\addplot[color=red]
-									table [x=Tiempo(s) ,y=Velocidad(rad/s) ,col sep=comma]
+								\addplot[color=red, smooth]
+									table
+									[
+										x=Tiempo(s),
+										y expr=\thisrow{Velocidad(rad/s)}*0.24,
+										col sep=comma
+									]
 									{datos3.csv};
 							\end{axis}
 						\end{tikzpicture}
@@ -41,11 +57,19 @@
 				\begin{figure}[H]
 					\centering
 						\begin{tikzpicture}
-							\begin{axis}[title=Aceleración vs tiempo]
-								%\addplot[color=red,samples=100]{sin(deg(x))};
+							\begin{axis}[
+								title=Aceleración vs tiempo,
+								xlabel={tiempo ($s$)},
+								ylabel={Aceleración ($ \frac{cm}{s^2} $)}
+								]
 								%Esto no funcionaba por los finales de línea de microsoft
-								\addplot[color=red]
-									table [x=Tiempo(s) ,y=Aceleracion(rad/s^2) ,col sep=comma]
+								\addplot[color=red, smooth]
+									table
+									[
+										x=Tiempo(s),
+										y expr=\thisrow{Aceleracion(rad/s^2)}*0.24,
+										col sep=comma
+									]
 									{datos3.csv};
 							\end{axis}
 						\end{tikzpicture}
