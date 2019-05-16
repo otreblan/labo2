@@ -11,7 +11,6 @@
 			\item Hacer gráficos de posición vs tiempo,
 				velocidad vs tiempo y
 				aceleración vs tiempo de la masa $m_2$.
-				%TODO Esto está incompleto. Falta convertir los radianes a cm con respecto a la masa 2
 				\begin{figure}[H]
 					\centering
 						\begin{tikzpicture}
@@ -25,7 +24,7 @@
 									table
 									[
 										x=Tiempo(s),
-										y expr=\thisrow{Angulo(rad)}*0.24,
+										y expr=\thisrow{Angulo(rad)}*2.4,
 										col sep=comma
 									]
 									{datos3.csv};
@@ -46,7 +45,7 @@
 									table
 									[
 										x=Tiempo(s),
-										y expr=\thisrow{Velocidad(rad/s)}*0.24,
+										y expr=\thisrow{Velocidad(rad/s)}*2.4,
 										col sep=comma
 									]
 									{datos3.csv};
@@ -67,7 +66,7 @@
 									table
 									[
 										x=Tiempo(s),
-										y expr=\thisrow{Aceleracion(rad/s^2)}*0.24,
+										y expr=\thisrow{Aceleracion(rad/s^2)}*2.4,
 										col sep=comma
 									]
 									{datos3.csv};
