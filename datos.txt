@@ -1,3 +1,5 @@
+Los datos en el csv están en radianes
+
 d = 30cm (distancia recorrida por el carrito)
 Radio interno = 14.5 mm (conectado al carrito)
 Radio externo = 24 mm (connectado al colgante)

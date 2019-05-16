@@ -11,7 +11,46 @@
 			\item Hacer gráficos de posición vs tiempo,
 				velocidad vs tiempo y
 				aceleración vs tiempo de la masa $m_2$.
-				%TODO gráficos del csv
+				%TODO Esto está incompleto. Falta convertir los radianes a cm con respecto a la masa 2
+				\begin{figure}[H]
+					\centering
+						\begin{tikzpicture}
+							\begin{axis}[title=Posición vs tiempo]
+								%\addplot[color=red,samples=100]{sin(deg(x))};
+								%Esto no funcionaba por los finales de línea de microsoft
+								\addplot[color=red]
+									table [x=Tiempo(s) ,y=Angulo(rad) ,col sep=comma]
+									{datos3.csv};
+							\end{axis}
+						\end{tikzpicture}
+					\label{fig:pos_vs_tmp}
+				\end{figure}
+				\begin{figure}[H]
+					\centering
+						\begin{tikzpicture}
+							\begin{axis}[title=Velocidad vs tiempo]
+								%\addplot[color=red,samples=100]{sin(deg(x))};
+								%Esto no funcionaba por los finales de línea de microsoft
+								\addplot[color=red]
+									table [x=Tiempo(s) ,y=Velocidad(rad/s) ,col sep=comma]
+									{datos3.csv};
+							\end{axis}
+						\end{tikzpicture}
+						\label{fig:vel_vs_tmp}
+				\end{figure}
+				\begin{figure}[H]
+					\centering
+						\begin{tikzpicture}
+							\begin{axis}[title=Aceleración vs tiempo]
+								%\addplot[color=red,samples=100]{sin(deg(x))};
+								%Esto no funcionaba por los finales de línea de microsoft
+								\addplot[color=red]
+									table [x=Tiempo(s) ,y=Aceleracion(rad/s^2) ,col sep=comma]
+									{datos3.csv};
+							\end{axis}
+						\end{tikzpicture}
+					\label{fig:ace_vs_tmp}
+				\end{figure}
 			\item En el sistema,
 				la aceleración con la que se mueve debe ser constante.
 				¿Las \textbf{tres} curvas son las esperadas?

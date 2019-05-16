@@ -1,4 +1,4 @@
-﻿"Último: Tiempo (s)","Último: Angulo (rad)","Último: Velocidad (rad/s)","Último: Aceleración (rad/s²)"
+Tiempo(s),Angulo(rad),Velocidad(rad/s),Aceleracion(rad/s^2)
 0,0,-28.487651902,-42.6646813014
 0.05,-1.36135681656,-30.3444883006,-50.1932990871
 0.1,-2.91469985083,-33.0856248536,-59.6369309133
