@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="radGrad.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="314.62044"
+     inkscape:cy="826.40461"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-center="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="false"
+     inkscape:object-paths="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1053"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ff4a00;stroke-width:1.93601716;stroke-miterlimit:4;stroke-dasharray:3.87203443, 1.93601722;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle819"
+       cx="62.006531"
+       cy="106.97137"
+       r="14.520377" />
+    <path
+       style="fill:none;stroke:#00ff5e;stroke-width:1.93297303px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 62.006533,106.97134 H 105.93999"
+       id="path821"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot823"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion825"><rect
+           id="rect827"
+           width="123.21429"
+           height="100.35714"
+           x="267.14285"
+           y="353.23398" /></flowRegion><flowPara
+         id="flowPara829"></flowPara></flowRoot>    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.93297303;stroke-opacity:1"
+       id="circle831"
+       cx="62.006535"
+       cy="106.97134"
+       r="43.933453" />
+    <circle
+       r="14.520377"
+       cy="106.97137"
+       cx="153.14545"
+       id="circle851"
+       style="fill:none;fill-opacity:1;stroke:#0c00ff;stroke-width:1.93601716;stroke-miterlimit:4;stroke-dasharray:3.87203443, 1.93601722000000009;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path853"
+       d="M 153.14544,106.97134 H 197.0789"
+       style="fill:none;stroke:#00ff5e;stroke-width:1.93297303px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       r="43.933453"
+       cy="106.97134"
+       cx="153.14545"
+       id="circle855"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.93297303;stroke-opacity:1" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot857"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,4.8108515,-19.243406)"><flowRegion
+         id="flowRegion859"><rect
+           id="rect861"
+           width="253.4697"
+           height="90.198395"
+           x="162.71315"
+           y="254.50383" /></flowRegion><flowPara
+         id="flowPara863"
+         style="font-size:16px">radianes</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,95.94976,-19.510676)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot871"
+       xml:space="preserve"><flowRegion
+         id="flowRegion867"><rect
+           y="254.50383"
+           x="162.71315"
+           height="115.3283"
+           width="221.51682"
+           id="rect865" /></flowRegion><flowPara
+         id="flowPara869"
+         style="font-size:16px">grados</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot873"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,31.270535,12.294399)"><flowRegion
+         id="flowRegion875"><rect
+           id="rect877"
+           width="66.606476"
+           height="69.156883"
+           x="187.88837"
+           y="284.09308" /></flowRegion><flowPara
+         id="flowPara879"
+         style="font-size:16px">$2\pi$</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot881"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,27.261492,16.036172)"><flowRegion
+         id="flowRegion883"><rect
+           id="rect885"
+           width="104.04569"
+           height="74.751289"
+           x="535.38086"
+           y="281.06262" /></flowRegion><flowPara
+         id="flowPara887"
+         style="font-size:16px">$360^\circ$</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot922"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,47.039437,-29.934188)"><flowRegion
+         id="flowRegion918"><rect
+           id="rect916"
+           width="221.51682"
+           height="115.3283"
+           x="162.71315"
+           y="254.50383" /></flowRegion><flowPara
+         style="font-size:16px"
+         id="flowPara920">$2\pi=360^\circ$</flowPara></flowRoot>  </g>
+</svg>
