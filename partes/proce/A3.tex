@@ -1,4 +1,12 @@
 \subsection{Parte A3}%
 \label{sub:proce_parte_a3}
-
-Hecho en el laboratorio.
+%\begin{tabular}{l|l|l|l}
+	%\bfseries Tiempo $(s)$ &\bfseries Ángulo $(rad)$ &\bfseries Velocidad $\bigg{(} \frac{rad}{s} \bigg{)}$ &\bfseries Aceleración $\bigg{(} \frac{rad}{s^2} \bigg{)}$
+	%\csvreader[head to column names]{datos3.csv}{}
+	%{\\\hline\csvcoli&\csvcolii&\csvcoliii&\csvcoliv}
+%\end{tabular}
+\begin{longtable}{l|l|l|l}
+	\bfseries Tiempo $(s)$ &\bfseries Ángulo $(rad)$ &\bfseries Velocidad $\bigg{(} \frac{rad}{s} \bigg{)}$ &\bfseries Aceleración $\bigg{(} \frac{rad}{s^2} \bigg{)}$
+	\csvreader[head to column names]{datos3.csv}{}
+	{\\\hline\csvcoli&\csvcolii&\csvcoliii&\csvcoliv}
+\end{longtable}
