@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-\usepackage[pdfusetitle]{hyperref}
+\usepackage[pdfa ,pdfusetitle]{hyperref}
 \usepackage[spanish]{babel}
 \usepackage[margin=1.5cm, a4paper]{geometry}
 \usepackage[utf8]{inputenc}
@@ -22,6 +22,13 @@
 \usepackage{graphicx}
 \usepackage{svg}
 \usepackage{subcaption}
+
+%Esto para los links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
 
 \usepackage{fancyhdr}
 
@@ -76,5 +83,7 @@
 \import{}{partes/conclu/A1}
 \import{}{partes/conclu/A2}
 \import{}{partes/conclu/A3}
+\vfill
+Repositorio de github: \url{https://github.com/otreblan/labo2}
 
 \end{document}
