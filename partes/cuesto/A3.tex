@@ -28,6 +28,9 @@
 			\item Hacer gráficos de posición vs tiempo,
 				velocidad vs tiempo y
 				aceleración vs tiempo de la masa $m_2$.
+				\begin{center}
+					\huge{Hay que rehacer esta cosa}
+				\end{center}
 				\begin{figure}[H]
 					\centering
 						\begin{tikzpicture}
@@ -35,6 +38,8 @@
 								title=Posición vs tiempo,
 								xlabel={tiempo ($s$)},
 								ylabel={Posición ($cm$)},
+								xmin=0.5,
+								xmax=1.5,
 								width=0.9\textwidth,
 								height=8cm
 								]
@@ -43,10 +48,11 @@
 									table
 									[
 										x=Tiempo(s),
-										y expr=\thisrow{Angulo(rad)}*2.4,
+										%y expr=\thisrow{Angulo(rad)}*2.4,
+										y expr=\thisrow{Angulo(rad)}*1.45,
 										col sep=comma
 									]
-									{datos3.csv};
+									{datos5.csv};
 							\end{axis}
 						\end{tikzpicture}
 					\label{fig:pos_vs_tmp}
@@ -58,6 +64,8 @@
 								title=Velocidad vs tiempo,
 								xlabel={tiempo ($s$)},
 								ylabel={Velocidad ($ \frac{cm}{s} $)},
+								xmin=0.5,
+								xmax=1.5,
 								width=0.9\textwidth,
 								height=8cm
 								]
@@ -66,10 +74,11 @@
 									table
 									[
 										x=Tiempo(s),
-										y expr=\thisrow{Velocidad(rad/s)}*2.4,
+										%y expr=\thisrow{Velocidad(rad/s)}*2.4,
+										y expr=\thisrow{Velocidad(rad/s)}*1.45,
 										col sep=comma
 									]
-									{datos3.csv};
+									{datos5.csv};
 							\end{axis}
 						\end{tikzpicture}
 						\label{fig:vel_vs_tmp}
@@ -81,6 +90,8 @@
 								title=Aceleración vs tiempo,
 								xlabel={tiempo ($s$)},
 								ylabel={Aceleración ($ \frac{cm}{s^2} $)},
+								xmin=0.5,
+								xmax=1.5,
 								width=0.9\textwidth,
 								height=8cm
 								]
@@ -89,10 +100,11 @@
 									table
 									[
 										x=Tiempo(s),
-										y expr=\thisrow{Aceleracion(rad/s^2)}*2.4,
+										%y expr=\thisrow{Aceleracion(rad/s^2)}*2.4,
+										y expr=\thisrow{Aceleracion(rad/s^2)}*1.45,
 										col sep=comma
 									]
-									{datos3.csv};
+									{datos5.csv};
 							\end{axis}
 						\end{tikzpicture}
 					\label{fig:ace_vs_tmp}
@@ -103,21 +115,21 @@
 				¿Por qué sí?
 				¿Por qué no?
 				¿En todo el rango de datos?
-				\subitem No.
-				\subitem Porque el carrito tenía un resorte y habían fuerzas despreciadas.
-				\subitem Desde el primer choque del del resorte
+				%\subitem No.
+				%\subitem Porque el carrito tenía un resorte y habían fuerzas despreciadas.
+				%\subitem Desde el primer choque del del resorte
 			\item De acuerdo a los datos obtenidos,
 				¿coincide el valor de la velocidad final medida con la calculada
 				(usando relación trabajo-energía cinética)?
-				\subitem No.
-				Si la velocidad final esta en el momento del primer choque.
-				\begin{align*}
-					W &= 0.3m*|m_2g* \frac{24mm}{14.5mm}| *\cos(0)\\
-					W &= 0.3m*|0.100502kg*9.81 \frac{m}{s^2} * \frac{24mm}{14.5mm}| \\
-					W &= 1.63J = K \\
-					K &= \frac{m_1v_1^2}{2} \\
-					v_1 &= \sqrt{ \frac{0.49J*2}{1.0344kg} }\\
-					v_1 &= 0.97 \frac{m}{s} &&\text{En el gráfico $|v_1|> 0.1 \frac{m}{s} $}
-				\end{align*}
+				\subitem No. \textbf{Hay que volver a hacer las ecuaciones}
+				%Si la velocidad final esta en el momento del primer choque.
+				%\begin{align*}
+					%W &= 0.3m*|m_2g* \frac{24mm}{14.5mm}| *\cos(0)\\
+					%W &= 0.3m*|0.100502kg*9.81 \frac{m}{s^2} * \frac{24mm}{14.5mm}| \\
+					%W &= 1.63J = K \\
+					%K &= \frac{m_1v_1^2}{2} \\
+					%v_1 &= \sqrt{ \frac{0.49J*2}{1.0344kg} }\\
+					%v_1 &= 0.97 \frac{m}{s} &&\text{En el gráfico $|v_1|> 0.1 \frac{m}{s} $}
+				%\end{align*}
 		\end{itemize}
 \end{enumerate}
