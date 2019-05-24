@@ -1,4 +1,5 @@
 Los datos en el csv están en radianes
+El ² impedía la compilación
 
 d = 30cm (distancia recorrida por el carrito)
 Radio interno = 14.5 mm (conectado al colgante)
