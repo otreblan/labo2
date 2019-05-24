@@ -35,16 +35,40 @@
 					\centering
 						\begin{tikzpicture}
 							\begin{axis}[
-								title=Posición vs tiempo,
+								title=\textbf{Posición vs tiempo},
 								xlabel={tiempo ($s$)},
 								ylabel={Posición ($cm$)},
-								xmin=0.5,
-								xmax=1.5,
+								axis y line=left,
+								axis x line=bottom,
+								ymajorgrids=true,
+								%xmin=0.5,
+								%xmax=1.5,
 								width=0.9\textwidth,
 								height=8cm
 								]
 								%Esto no funcionaba por los finales de línea de microsoft
-								\addplot[color=red, smooth, ultra thick]
+								\addplot[
+									color=red,
+									smooth,
+									%restrict x to domain=0.5:1.4,
+									draw opacity=0.1,
+									ultra thick
+									]
+									table
+									[
+										x=Tiempo(s),
+										%y expr=\thisrow{Angulo(rad)}*2.4,
+										y expr=\thisrow{Angulo(rad)}*1.45,
+										col sep=comma
+									]
+									{datos5.csv};
+								\addplot[
+									color=red,
+									smooth,
+									restrict x to domain=0.4:1.45,
+									%draw opacity=0.1,
+									ultra thick
+									]
 									table
 									[
 										x=Tiempo(s),
@@ -61,16 +85,39 @@
 					\centering
 						\begin{tikzpicture}
 							\begin{axis}[
-								title=Velocidad vs tiempo,
+								title=\textbf{Velocidad vs tiempo},
 								xlabel={tiempo ($s$)},
 								ylabel={Velocidad ($ \frac{cm}{s} $)},
-								xmin=0.5,
-								xmax=1.5,
+								axis y line=left,
+								axis x line=bottom,
+								ymajorgrids=true,
+								%xmin=0.5,
+								%xmax=1.5,
 								width=0.9\textwidth,
 								height=8cm
 								]
 								%Esto no funcionaba por los finales de línea de microsoft
-								\addplot[color=red, smooth, ultra thick]
+								\addplot[
+									color=red,
+									smooth,
+									draw opacity=0.1,
+									ultra thick
+									]
+									table
+									[
+										x=Tiempo(s),
+										%y expr=\thisrow{Velocidad(rad/s)}*2.4,
+										y expr=\thisrow{Velocidad(rad/s)}*1.45,
+										col sep=comma
+									]
+									{datos5.csv};
+								\addplot[
+									color=red,
+									smooth,
+									restrict x to domain=0.4:1.45,
+									%draw opacity=0.1,
+									ultra thick
+									]
 									table
 									[
 										x=Tiempo(s),
@@ -86,17 +133,35 @@
 				\begin{figure}[H]
 					\centering
 						\begin{tikzpicture}
+							[
+							spy using outlines={rectangle,
+												magnification=2,
+												drop shadow,
+												width=8cm,
+												height=3cm,
+												connect spies
+												}
+							]
 							\begin{axis}[
-								title=Aceleración vs tiempo,
+								title=\textbf{Aceleración vs tiempo},
 								xlabel={tiempo ($s$)},
 								ylabel={Aceleración ($ \frac{cm}{s^2} $)},
-								xmin=0.5,
-								xmax=1.5,
+								axis y line=left,
+								axis x line=bottom,
+								ymajorgrids=true,
+								axis line style = ultra thick,
+								%xmin=0.5,
+								%xmax=1.5,
 								width=0.9\textwidth,
 								height=8cm
 								]
 								%Esto no funcionaba por los finales de línea de microsoft
-								\addplot[color=red, smooth, ultra thick]
+								\addplot[
+									color=red,
+									smooth,
+									draw opacity=0.1,
+									ultra thick
+									]
 									table
 									[
 										x=Tiempo(s),
@@ -105,7 +170,25 @@
 										col sep=comma
 									]
 									{datos5.csv};
+								\addplot[
+									color=red,
+									smooth,
+									restrict x to domain=0.4:1.45,
+									%draw opacity=0.1,
+									ultra thick
+									]
+									table
+									[
+										x=Tiempo(s),
+										%y expr=\thisrow{Aceleracion(rad/s^2)}*2.4,
+										y expr=\thisrow{Aceleracion(rad/s^2)}*1.45,
+										col sep=comma
+									]
+									{datos5.csv};
+								\coordinate (ripple) at (0.95,-50);
+								\coordinate (lupa) at (4,400);
 							\end{axis}
+							\spy[black] on (ripple) in node[fill=white] at (lupa);
 						\end{tikzpicture}
 					\label{fig:ace_vs_tmp}
 				\end{figure}
