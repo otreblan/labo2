@@ -7,6 +7,37 @@
 %\end{tabular}
 \begin{longtable}{l|l|l|l}
 	\bfseries Tiempo $(s)$ &\bfseries Ángulo $(rad)$ &\bfseries Velocidad $\bigg{(} \frac{rad}{s} \bigg{)}$ &\bfseries Aceleración $\bigg{(} \frac{rad}{s^2} \bigg{)}$
-	\csvreader[head to column names]{datos5.csv}{}
+	\csvreader[
+				head to column names,
+				%filter test=\ifdimgreater{\csvcoli pt}{0.4pt},
+				%filter test=\ifdimless{\csvcoli pt}{1.45pt},
+				%filter test={\csvcoli < 1.0}
+				%filter test=\ifnumgreater{\csvcoli}{0.0},
+
+				%Hay que convertir los float a pt para poder compararlos
+				filter expr={
+							%test{\ifnumgreater{\csvcoli}{0}}
+							test{\ifdimgreater{\csvcoli pt}{0.4pt}}
+							and
+							test{\ifdimless{\csvcoli pt}{1.45pt}}
+				},
+				]{datos5.csv}{}
 	{\\\hline\csvcoli&\csvcolii&\csvcoliii&\csvcoliv}
 \end{longtable}
+%\csvreader[
+			%head to column names,
+			%longtable=l|l|l|l,
+			%%respect all,
+			%%full filter=\ifcsvstrcmp{\csvcoli}{0}{\csvfilteraccept}{\csvfilterreject},
+			%%full filter=\ifnumgreater{\Tiempo}{0}{\csvfilteraccept}{\csvfilterreject},
+			%%filter={\tiempo<4}
+			%%filter test=\ifdimgreater{\csvcoli pt}{1.0pt},
+			%%filter test={\csvcoli < 1.0}
+			%%filter={\value{csvcoli}<1},
+			%%filter={\csvcolv < 1.0},
+			%%filter \ifnumgreater{\csvcoli}{0},
+			%%filter expr={
+						%%test{\ifnumgreater{\csvcoli}{0}}
+			%%},
+			%]{datos5.csv}{\csvcoli=\tiempo}
+%{\\\hline\csvcoli&\csvcolii&\csvcoliii&\csvcoliv}
